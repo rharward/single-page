@@ -1,49 +1,54 @@
 * {
-  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; 
 }
 
-.btn-start {
-    background-color: #fa923f;
-    color: white;
-    border: 2px solid #512751;
-    border-radius: 15px;
-    margin: 15px auto;
-    display: block;
-    width: 10rem;
-    height: 2rem;
+body {
+  height: 110vh;
+  display: flex;
+  background: rgb(180, 181, 230);
+}
+.memory-game {
+  width: 640px;
+  height: 640px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  perspective: 1000px;
+  
+}
+.memory-card {
+  width: calc(25% - 10px);
+  height: calc(33.333% - 10px);
+  margin: 5px;
+  position: relative;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transfrom .5s;
+
+}
+.memory-card:active {
+  transform: scale(.97);
+  transition: transform .2s
 }
 
-.container {
-    width: 800px;
-    height: 900px;
-    border: 5px solid black;
-    margin: 15px auto;
-    background-image: url("./courses/calendar11.png");
-    background-size: cover;
-    box-shadow: 6px 6px 20px gray;
-    display: grid;
-    grid-template-columns: repeat(4, 25%);
-    grid-template-rows: repeat(6, 1fr);
-    grid-template-areas: 
-        "door9 door6 door11 door7"
-        "door3 door20 door16 door2"
-        "door14 door12 door19 door15"
-        "door22 door1 door5 door23"
-        "door17 door10 door24 door21"
-        "door8 door18 door4 door13";
+.memory-card.flip {
+  transform: rotateY(180deg);
 }
 
-.image {
-    background-image: none;
-    background-size: cover;
-    background-position: center;
+.front-face,
+.back-face {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  position: absolute;
+  border-radius: 5px;
+  background: #e7edf1;
+  backface-visibility: hidden;
+  opacity: 0.7;
 }
 
-.text {
-    height: 100%;
-    width: 100%;
-    color: white;
-    padding: 10px;
-    border: 2px solid black;
-    transition: opacity 2.5s;
+.front-face {
+  transform: rotateY(180deg);
 }
