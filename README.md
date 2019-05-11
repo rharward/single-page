@@ -1,2 +1,2 @@
-# single-page
+# Web Directory
 coursera
