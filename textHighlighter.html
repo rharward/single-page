@@ -27,14 +27,15 @@
 
     var quotearea = document.getElementById('quote')
     var output = document.getElementById('output')
+    var quoteareaarray = quotearea.innerHTML.split('');
+
     quotearea.addEventListener('mouseup', function () {
       if (this.selectionStart != this.selectionEnd) { // check the user has selected some text inside field
         var selectedtext = this.value.substring(this.selectionStart, this.selectionEnd)
-        output.innerHTML = (selectedtext + " THE STARTING POINT TO THIS HIGHLIGHTED TEXT IS = " + this.selectionStart + " THE ENDING POINT TO THIS TEXT IS =" + this.selectionEnd + quotearea.innerHTML)
-        console.log(quotearea);
+        output.innerHTML = (selectedtext + " THE STARTING POINT TO THIS HIGHLIGHTED TEXT IS = " + this.selectionStart + " THE ENDING POINT TO THIS TEXT IS =" + this.selectionEnd + quotearea.innerHTML + "******" + quoteareaarray)
+        console.log(quoteareaarray);
       }
     }, false)
-
   </script>
 </body>
 
