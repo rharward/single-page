@@ -24,7 +24,7 @@
 
 
   <script>
-
+    var globalcount = 0;
     var quotearea = document.getElementById('quote')
     var output = document.getElementById('output')
     var quoteareaarray = quotearea.innerHTML.split('');
@@ -40,16 +40,18 @@
         output.innerHTML = (selectedtext + " THE STARTING POINT = " + this.selectionStart + " THE ENDING POINT = " + this.selectionEnd + " ****** " + quoteareaarray)
 
         text = "<ul>";
-        quoteareaarray.forEach(myFunction);
+        quoteareaarray.forEach(myFunction)
+
         text += "</ul>";
         quoteareaarray = text;
 
         function myFunction(value) {
-          text += "<h1>" + value + "</h1>";
+          text += " " + value + " ";
         }
-        console.log(quoteareaarray);
       }
     }, false)
+
+    console.log("the global count is = " + globalcount);
   </script>
 </body>
 
