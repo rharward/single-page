@@ -31,9 +31,9 @@
     quoteareaarray = quotearea.innerHTML.split('');
     console.log(quoteareaarray.length);
     //quoteareaarrayhighlightcount[]
-    // text = "<ul>";
-    // text += quoteareaarray;
-    // text += "/ul>";
+    text = "<ul>";
+    text += quoteareaarray;
+    text += "/ul>";
 
 
     quotearea.addEventListener('mouseup', function () {
@@ -43,7 +43,7 @@
 
 
 
-        output.innerHTML = (selectedtext + " START = " + this.selectionStart + " END = " + this.selectionEnd + " ****** " + quoteareaarray)
+        output.innerHTML = (selectedtext + " START = " + this.selectionStart + " END = " + this.selectionEnd + " ****** " + quoteareaarray + "  " + quoteareaarray.length)
       }
     }, false)
 
