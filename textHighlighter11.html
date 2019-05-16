@@ -24,6 +24,7 @@
 
 
   <script>
+    document.body.style.backgroundImage = "url('flowers.jpg')";
     var globaltext = "";
     var quotearea = document.getElementById('quote')
     var output = document.getElementById('output')
@@ -47,13 +48,13 @@
     }, false)
 
     function saveHighlight() {
+      // text = "<ul>";
+      // text += "YOU CLICKED ME"
+      // text += "</ul>";
+      // text += "<ul>";
+      // text += "The highlighted section is:";
+      // text += "</ul>";
       text = "<ul>";
-      text += "YOU CLICKED ME"
-      text += "</ul>";
-      text += "<ul>";
-      text += "The highlighted section is:";
-      text += "</ul>";
-      text += "<ul>";
       text += globaltext;
       text += "</ul>";
       output.innerHTML = text;
