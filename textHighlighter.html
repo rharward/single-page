@@ -24,30 +24,26 @@
 
 
   <script>
-    var globalcount = 0;
+    var globalcount = 50;
     var quotearea = document.getElementById('quote')
     var output = document.getElementById('output')
-    var quoteareaarray = quotearea.innerHTML.split('');
+    var quoteareaarray = [];
+    quoteareaarray = quotearea.innerHTML.split('');
+    console.log(quoteareaarray.length);
     //quoteareaarrayhighlightcount[]
+    // text = "<ul>";
+    // text += quoteareaarray;
+    // text += "/ul>";
+
 
     quotearea.addEventListener('mouseup', function () {
       if (this.selectionStart != this.selectionEnd) { // check the user has selected some text inside field
         var selectedtext = this.value.substring(this.selectionStart, this.selectionEnd);
 
-        //output.innerHTML = (selectedtext + " THE STARTING POINT = " + this.selectionStart + " THE ENDING POINT = " + this.selectionEnd + " ****** " + quoteareaarray)
-        //console.log(quoteareaarray);
 
-        output.innerHTML = (selectedtext + " THE STARTING POINT = " + this.selectionStart + " THE ENDING POINT = " + this.selectionEnd + " ****** " + quoteareaarray)
 
-        text = "<ul>";
-        quoteareaarray.forEach(myFunction)
 
-        text += "</ul>";
-        quoteareaarray = text;
-
-        function myFunction(value) {
-          text += " " + value + " ";
-        }
+        output.innerHTML = (selectedtext + " START = " + this.selectionStart + " END = " + this.selectionEnd + " ****** " + quoteareaarray)
       }
     }, false)
 
