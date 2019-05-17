@@ -1,2 +1,2 @@
 # Web Directory
-coursera
+static web pages and javascript experiments
