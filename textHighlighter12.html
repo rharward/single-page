@@ -77,7 +77,8 @@
       // text += "The highlighted section is:";
       // text += "</ul>";
       // text += "<ul>";
-      text += "<a style='color: black'>"
+      output.innerHTML = "";
+      //text += "<a style='color: black'>"
       text += starttext;
       //text += "/<ul>";
       //text += "<ul>";
@@ -90,7 +91,9 @@
 
       //text += "</ul>";
       output.innerHTML = text;
-      text = output.innerHTML;
+      console.log(text);
+      quotearea.innerHTML = output.innerHTML;
+      text = "";
     };
 
     function loadFileAsText() {
