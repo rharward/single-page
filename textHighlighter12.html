@@ -42,13 +42,16 @@
   <script>
     document.body.style.backgroundImage = "url('blueprint.jpg')";
     var globaltext = "";
+    var starttext = "";
+    var endtext = "";
     var quotearea = document.getElementById('quote')
     var output = document.getElementById('output')
     var quoteareaarray = [];
     quoteareaarray = quotearea.innerHTML.split('');
-    text = "<ul>";
-    text += quoteareaarray;
-    text += "/ul>";
+    var text = "";
+    // text += "<ul>";
+    //text += quoteareaarray;
+    //text += "/ul>";
 
 
     quotearea.addEventListener('mouseup', function () {
@@ -57,6 +60,9 @@
         globaltext = selectedtext;
 
 
+
+        starttext = (this.value.substring(0, this.selectionStart));
+        endtext = (this.value.substring(this.selectionEnd, this.LastChild));
 
 
         //  output.innerHTML = (selectedtext + " START = " + this.selectionStart + " END = " + this.selectionEnd + " ****** " + quoteareaarray + "  " + quoteareaarray.length)
@@ -70,9 +76,17 @@
       // text += "<ul>";
       // text += "The highlighted section is:";
       // text += "</ul>";
-      text = "<ul>";
-      text += globaltext;
-      text += "</ul>";
+      text += "<ul>";
+      text += starttext;
+      text += "/<ul>";
+      text += "<ul>";
+      text += "<p style='color: blue; margin - left: 30px; '>"
+      text += globaltext
+      text += "</p>";
+      // text += "/<ul>";
+      text += endtext;
+
+      //text += "</ul>";
       output.innerHTML = text;
     };
 
