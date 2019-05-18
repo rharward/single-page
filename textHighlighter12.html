@@ -48,7 +48,7 @@
     var output = document.getElementById('output')
     var quoteareaarray = [];
     quoteareaarray = quotearea.innerHTML.split('');
-    var text = "";
+    var text = output.innerHTML;
     // text += "<ul>";
     //text += quoteareaarray;
     //text += "/ul>";
@@ -76,18 +76,21 @@
       // text += "<ul>";
       // text += "The highlighted section is:";
       // text += "</ul>";
-      text += "<ul>";
+      // text += "<ul>";
+      text += "<a style='color: black'>"
       text += starttext;
-      text += "/<ul>";
-      text += "<ul>";
-      text += "<p style='color: blue; margin - left: 30px; '>"
+      //text += "/<ul>";
+      //text += "<ul>";
+      text += "<a style='color: blue'>"
       text += globaltext
-      text += "</p>";
+      //text += "</p>";
       // text += "/<ul>";
+      text += "<a style='color: black '>"
       text += endtext;
 
       //text += "</ul>";
       output.innerHTML = text;
+      text = output.innerHTML;
     };
 
     function loadFileAsText() {
