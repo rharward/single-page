@@ -8,24 +8,40 @@
 </head>
 
 <body>
-  <textarea id="quote" cols="150" rows="5" style="color: green" contenteditable="true">
+  <textarea id="quote" cols="120" rows="10" style="color: black" contenteditable="true">
 
 
 
-      Deleuze and Guattari use the terms "rhizome" and "rhizomatic" to describe theory and research that allows for multiple, non-hierarchical entry and exit points in data representation and interpretation. In A Thousand Plateaus, they oppose it to an arborescent (hierarchic, tree-like) conception of knowledge, which works with dualist categories and binary choices. A rhizome works with planar and trans-species connections, while an arborescent model works with vertical and linear connections. Their use of the "orchid and the wasp" is taken from the biological concept of mutualism, in which two different species interact together to form a multiplicity (i.e. a unity that is multiple in itself). Hybridization or horizontal gene transfer would also be good illustrations.
-      
-      "As a model for culture, the rhizome resists the organizational structure of the root-tree system which charts causality along chronological lines and looks for the original source of 'things' and looks towards the pinnacle or conclusion of those 'things.'
-     
-      A rhizome, on the other hand, is characterized by 'ceaselessly established connections between semiotic chains, organizations of power, and circumstances relative to the arts, sciences, and social struggles.' Rather than narrativize history and culture, the rhizome presents history and culture as a map or wide array of attractions and influences with no specific origin or genesis, for a 'rhizome has no beginning or end; it is always in the middle, between things, interbeing, intermezzo.' The planar movement of the rhizome resists chronology and organization, instead favoring a nomadic system of growth and propagation.
-      
-      "In this model, culture spreads like the surface of a body of water, spreading towards available spaces or trickling downwards towards new spaces through fissures and gaps, eroding what is in its way. The surface can be interrupted and moved, but these disturbances leave no trace, as the water is charged with pressure and potential to always seek its equilibrium, and thereby establish smooth space."[1]
-    
-  </textarea>
+    Deleuze and Guattari use the terms "rhizome" and "rhizomatic" to describe theory and research that allows for
+    multiple, non-hierarchical entry and exit points in data representation and interpretation. In A Thousand Plateaus,
+    they oppose it to an arborescent (hierarchic, tree-like) conception of knowledge, which works with dualist
+    categories and binary choices. A rhizome works with planar and trans-species connections, while an arborescent model
+    works with vertical and linear connections. Their use of the "orchid and the wasp" is taken from the biological
+    concept of mutualism, in which two different species interact together to form a multiplicity (i.e. a unity that is
+    multiple in itself). Hybridization or horizontal gene transfer would also be good illustrations.
+
+    "As a model for culture, the rhizome resists the organizational structure of the root-tree system which charts
+    causality along chronological lines and looks for the original source of 'things' and looks towards the pinnacle or
+    conclusion of those 'things.'
+
+    A rhizome, on the other hand, is characterized by 'ceaselessly established connections between semiotic chains,
+    organizations of power, and circumstances relative to the arts, sciences, and social struggles.' Rather than
+    narrativize history and culture, the rhizome presents history and culture as a map or wide array of attractions and
+    influences with no specific origin or genesis, for a 'rhizome has no beginning or end; it is always in the middle,
+    between things, interbeing, intermezzo.' The planar movement of the rhizome resists chronology and organization,
+    instead favoring a nomadic system of growth and propagation.
+
+    "In this model, culture spreads like the surface of a body of water, spreading towards available spaces or trickling
+    downwards towards new spaces through fissures and gaps, eroding what is in its way. The surface can be interrupted
+    and moved, but these disturbances leave no trace, as the water is charged with pressure and potential to always seek
+    its equilibrium, and thereby establish smooth space."[1]
+
+    </textarea>
 
 
   <br>
   <button onclick="saveHighlight()">SAVE HIGHLIGHT</button>
-  <button id="fileToLoad2" onclick="loadFileAsText()">LOAD TEXT</button>
+  <button id="fileToLoad2" onclick="loadFileAsText()">LOAD FILE INTO TEXT FIELD</button>
   <button onclick="loadHighlight()">LOAD HIGHLIGHT</button>
   <button id="inputFileNameToSaveAs" onclick="saveText()">SAVE HIGHLIGHT TEXT</button><br>
   <input type="file" id="fileToLoad"><br>
@@ -44,6 +60,8 @@
     var quoteareaarray = [];
     quoteareaarray = quotearea.innerHTML.split('');
     var text = output.innerHTML;
+    var textholder = document.getElementById('quote')
+    //var textholder = "";
     // text += "<ul>";
     //text += quoteareaarray;
     //text += "/ul>";
@@ -83,7 +101,6 @@
       // text += "/<ul>";
       text += "<a style='color: black '>"
       text += endtext;
-
       //text += "</ul>";
       output.innerHTML = text;
       console.log(text);
