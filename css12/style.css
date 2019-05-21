@@ -268,43 +268,43 @@ blockquote .author {
 }
 
 #img1:checked ~ .layout.gallery > .content > .gallery-col2 > .gallery-imageholder {
-  background-image: url(http://www.hi.agency/deck/gallery/abstract-composition2.png);
+  background-image: url(../gridCSSArt/butterfly.png);
   background-color: #000;
 }
 
 #img1thumb, #img1:checked ~ .layout.gallery > .content > .gallery-col2 > .gallery-imageholder {
-  background-image: url(http://www.hi.agency/deck/gallery/abstract-composition2.png);
+  background-image: url(../gridCSSArt/butterfly.png);
   background-color: #eb0000;
 }
 
 #img2thumb, #img2:checked ~ .layout.gallery > .content > .gallery-col2 > .gallery-imageholder {
-  background-image: url(http://www.hi.agency/deck/gallery/a-strike.png);
+  background-image: url(../gridCSSArt/butterfly.png);
 }
 
 #img3thumb, #img3:checked ~ .layout.gallery > .content > .gallery-col2 > .gallery-imageholder {
-  background-image: url(http://www.hi.agency/deck/gallery/xs-col.png);
+  background-image: url(../gridCSSArt/butterfly.png);
 }
 
 #img4thumb, #img4:checked ~ .layout.gallery > .content > .gallery-col2 > .gallery-imageholder {
-  background-image: url(http://www.hi.agency/deck/gallery/a-strike2.png);
+  background-image: url(../gridCSSArt/butterfly.png);
   background-color: #000;
 }
 
 #img5thumb, #img5:checked ~ .layout.gallery > .content > .gallery-col2 > .gallery-imageholder {
-  background-image: url(http://www.hi.agency/deck/gallery/circle.png);
+  background-image: url(../gridCSSArt/butterfly.png);
 }
 
 #img6thumb, #img6:checked ~ .layout.gallery > .content > .gallery-col2 > .gallery-imageholder {
-  background-image: url(http://www.hi.agency/deck/gallery/abstract-composition3.png);
+  background-image: url(../gridCSSArt/butterfly.png);
 }
 
 #img7thumb, #img7:checked ~ .layout.gallery > .content > .gallery-col2 > .gallery-imageholder {
-  background-image: url(http://www.hi.agency/deck/gallery/grid2-col.png);
+  background-image: url(../gridCSSArt/butterfly.png);
   background-color: #02249f;
 }
 
 #img8thumb, #img8:checked ~ .layout.gallery > .content > .gallery-col2 > .gallery-imageholder {
-  background-image: url(http://www.hi.agency/deck/gallery/navigation.png);
+  background-image: url(../gridCSSArt/butterfly.png);
   background-position: right 0;
 }
 

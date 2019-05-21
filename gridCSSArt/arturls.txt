@@ -1,0 +1,8 @@
+http://www.hi.agency/deck/img/cover1.png
+http://www.hi.agency/deck/img/about.png
+http://www.hi.agency/deck/img/navigation.png
+http://www.hi.agency/deck/img/grid.png
+http://www.hi.agency/deck/img/mobile.png
+http://www.hi.agency/deck/img/legacy.png
+http://www.hi.agency/deck/img/image.png
+http://www.hi.agency/deck/img/quote.png
