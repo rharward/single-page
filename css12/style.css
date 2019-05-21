@@ -273,33 +273,33 @@ blockquote .author {
 }
 
 #img1thumb, #img1:checked ~ .layout.gallery > .content > .gallery-col2 > .gallery-imageholder {
-  background-image: url(../gridCSSArt/butterfly.png);
+  background-image: url(../gridCSSArt/thistle.png);
   background-color: #eb0000;
 }
 
 #img2thumb, #img2:checked ~ .layout.gallery > .content > .gallery-col2 > .gallery-imageholder {
-  background-image: url(../gridCSSArt/butterfly.png);
+  background-image: url(../gridCSSArt/peacock.png);
 }
 
 #img3thumb, #img3:checked ~ .layout.gallery > .content > .gallery-col2 > .gallery-imageholder {
-  background-image: url(../gridCSSArt/butterfly.png);
+  background-image: url(../gridCSSArt/cretecat.png);
 }
 
 #img4thumb, #img4:checked ~ .layout.gallery > .content > .gallery-col2 > .gallery-imageholder {
-  background-image: url(../gridCSSArt/butterfly.png);
+  background-image: url(../gridCSSArt/luna.png);
   background-color: #000;
 }
 
 #img5thumb, #img5:checked ~ .layout.gallery > .content > .gallery-col2 > .gallery-imageholder {
-  background-image: url(../gridCSSArt/butterfly.png);
+  background-image: url(../gridCSSArt/jelly.png);
 }
 
 #img6thumb, #img6:checked ~ .layout.gallery > .content > .gallery-col2 > .gallery-imageholder {
-  background-image: url(../gridCSSArt/butterfly.png);
+  background-image: url(../gridCSSArt/thistle11.png);
 }
 
 #img7thumb, #img7:checked ~ .layout.gallery > .content > .gallery-col2 > .gallery-imageholder {
-  background-image: url(../gridCSSArt/butterfly.png);
+  background-image: url(../gridCSSArt/crete.png);
   background-color: #02249f;
 }
 
