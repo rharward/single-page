@@ -273,7 +273,7 @@ blockquote .author {
 }
 
 #img1thumb, #img1:checked ~ .layout.gallery > .content > .gallery-col2 > .gallery-imageholder {
-  background-image: url(../gridCSSArt/thistle.png);
+  background-image: url(../gridCSSArt/anenome.png);
   background-color: #eb0000;
 }
 
