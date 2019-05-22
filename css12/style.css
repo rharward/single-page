@@ -295,7 +295,7 @@ blockquote .author {
 }
 
 #img6thumb, #img6:checked ~ .layout.gallery > .content > .gallery-col2 > .gallery-imageholder {
-  background-image: url(../gridCSSArt/thistle11.png);
+  background-image: url(../gridCSSArt/thistle.png);
 }
 
 #img7thumb, #img7:checked ~ .layout.gallery > .content > .gallery-col2 > .gallery-imageholder {
