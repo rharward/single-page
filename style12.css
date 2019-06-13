@@ -1,0 +1,53 @@
+body {
+  color: #fff;
+  font-size: 1em;
+  font-family: Arial, sans-serif;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2em;
+  padding: 20px;
+  margin: 0;
+}
+h1.title {
+  background-color: rgba(0, 0, 0, 0.42);
+}
+
+section {
+  min-height: 400px;
+  margin: 0;
+  overflow: hidden;
+}
+
+p {
+  padding: 20px;
+}
+
+.first {
+  background: url("images12/bees11.jpg") 50% 50% no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.second {
+  background: #383838;
+}
+
+.third {
+  background: url("images12/butterflies11.jpg") 50% 50% no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.forth  {
+  background: #383838;
+}
+.fifth {
+  background: url("images12/bees16.jpg") 50% 50% no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
