@@ -1,0 +1,99 @@
+* {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body,
+.l,
+.bg,
+.bg > .c,
+.fg {
+  width: 100%;
+  height: 100%;
+}
+
+/* LAYER */
+.l {
+  position: relative;
+  overflow: hidden;
+}
+
+/* BACKGROUND */
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: top .5s;
+}
+
+.c1 {
+  background: url("images12/bees11.jpg") center center no-repeat;
+}
+
+.c2 {
+  background: url("images12/butterflies11.jpg") center center no-repeat;
+}
+
+.c3 {
+  background: url("images12/bees17.jpg") center center no-repeat;
+}
+
+.c4 {
+  background: url("images12/crete13.jpg") center center no-repeat;
+}
+
+.c5 {
+  background: url("images12/bees16.jpg") center center no-repeat;
+}
+
+/* FOREGROUND */
+.fg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: top 1s;
+}
+
+.fg > .c {
+  width: 100%;
+  height: 200%;
+  position: relative;
+}
+
+.fg > .c > h1 {
+  font-size: 56px;
+  color: white;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  text-shadow: -2px 0 black, -2px 2px black, -2px -2px black, 0 2px black, 2px 0 black, 2px 2px black, 2px -2px black, 0 -2px black;
+  transform: translateY(-50%);
+}
+
+.fg > .c > h1 > small {
+  font-size: 32px;
+  color: #cfcfcf;
+}
+
+.i {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+  word-spacing: 10px;
+}
+
+.i > a {
+  background: #888888;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.i > a.active {
+  background: white;
+}
