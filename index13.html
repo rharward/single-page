@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Pure CSS Slide Template</title>
+
+
+
+	<link rel="stylesheet" href="css12/style.css">
+
+
+</head>
+
+<body>
+
+	<!--
+
+_______________________________________________________________________________
+_______________________________________________________________________________
+_______________________________________________________________________________
+_______________________________________________________________________________
+_________/////////___________/////////______/////////__________________________
+________///////////_________///////////____///////////_________________________
+________///////////_________///////////____///////////_________________________
+________///////////_________///////////____///////////_________________________
+________///////////_________///////////_____/////////__________________________
+________///////////_________///////////________________________________________
+________///////////_________///////////________________________________________
+________///////////////////////////////_____/////////__________________________
+________///////////////////////////////____///////////_________________________
+________///////////////////////////////____///////////_________________________
+________///////////////////////////////____///////////_________________________
+________///////////////////////////////____///////////_________________________
+________///////////_________///////////____///////////_________________________
+________///////////_________///////////____///////////_________________________
+________///////////_________///////////____///////////_____/////////___________
+________///////////_________///////////____///////////____///////////__________
+________///////////_________///////////____///////////____///////////__________
+________///////////_________///////////____///////////____///////////__________
+_________/////////___________/////////______/////////______/////////___________
+_______________________________________________________________________________
+_______________________________________________________________________________
+_______________________________________________________________________________
+_______________________________________________________________________________
+
+
+
+Copyright (c) 2017 James Clarke - www.hi.agency
+
+Version: 0.1a
+
+MIT License
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+DEALINGS IN THE SOFTWARE.
+
+
+Thank you James Clarke for Cool CSS Grid Template. I use this template to create
+my verion that not use css grid.
+
+-->
+	<html lang="en">
+
+	<head>
+		<title>Deck CSS Grid template by Hi. Creative Agency</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="description" content="Deck is a dynamic, CSS only website template">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+
+	</head>
+
+	<body class="">
+		<input type="checkbox" id="menuChk" name="menuChk" />
+
+		<div class="menu desktop" id="menu">
+			<label for="menuChk" class="menuCloseBtn">&times;</label>
+			<h3>Table of Contents:</h3>
+			<ul>
+				<li><a href="#p1">Introduction</a></li>
+				<li><a href="#p2">About Deck</a></li>
+				<li><a href="#p3">Navigation</a></li>
+				<li><a href="#p4">CSS Grid</a></li>
+				<li><a href="#p5">Mobile</a></li>
+				<li><a href="#p6">Legacy browsers</a></li>
+				<li><a href="#p7">Example: Image</a></li>
+				<li><a href="#p8">Example: Quote</a></li>
+				<li><a href="#p9" class="gallery-link">Example: Gallery</a></li>
+			</ul>
+		</div>
+
+		<div class="wrapper">
+			<!-- Proxy anchors associate with layout ids in CSS. Transforms applied to scroll pages to view in desktop mode-->
+			<div class="proxy-anchor" id="p1"></div>
+			<div class="proxy-anchor" id="p2"></div>
+			<div class="proxy-anchor" id="p3"></div>
+			<div class="proxy-anchor" id="p4"></div>
+			<div class="proxy-anchor" id="p5"></div>
+			<div class="proxy-anchor" id="p6"></div>
+			<div class="proxy-anchor" id="p7"></div>
+			<div class="proxy-anchor" id="p8"></div>
+			<div class="proxy-anchor" id="p9"></div>
+			<!--/ Proxy anchors -->
+
+			<div class="grid">
+				<div class="item white-bg" id="page1">
+					<a href="#p1" class="focus-page">focus</a><label class="selected-closer" for="menuChk">&nbsp;</label>
+					<div id="image1" class="image">
+						<div class="image-container"><img src="gridCSSArt/thistle.png" alt="Cover Artwork"></div>
+					</div>
+
+					<div class="layout home">
+						<div class="content">
+							<h2>PRINT AND CODE</h2>
+							<h3 class="huge">Soft Skills and Fabric Tech</h3>
+							<p>examples</p>
+						</div>
+						<div class="sidebar">
+							<a href="#p2" class="next-page">Next</a>
+						</div>
+					</div>
+				</div> <!-- End item1 -->
+
+
+				<div class="item white-txt red-bg" id="page2">
+					<a href="#p2" class="focus-page">focus</a><label class="selected-closer" for="menuChk">&nbsp;</label>
+					<div id="image2" class="image">
+						<div class="image-container"><img src="gridCSSArt/thistle11.png" alt="Artwork"></div>
+					</div>
+
+					<div class="layout">
+						<div class="content">
+							<h2>Soft Skills</h2>
+							<p>Soft Skills include coding, graphic design, and printing </p>
+							<p>We are a full-stack agency that specializes in Javascript.</p>
+							<p>Many of our projects involve social entrepreneurship.</p>
+						</div>
+						<div class="sidebar">
+							<a href="#p3" class="next-page">Next</a>
+						</div>
+					</div>
+				</div> <!-- End item2 -->
+
+
+				<div class="item white-txt blue-bg" id="page3">
+					<a href="#p3" class="focus-page">focus</a><label class="selected-closer" for="menuChk">&nbsp;</label>
+					<div id="image3" class="image">
+						<div class="image-container"><img src="gridCSSArt/cretecat.png" alt="Artwork"></div>
+					</div>
+
+					<div class="layout">
+						<div class="content">
+							<h2>Graphic Design</h2>
+							<p>Screen Printing, Laser Cutting, 3D Printing, all provide target industries for image editing software.
+								We create our own and work with cutting edge image editing and modelling software.
+							</p>
+						</div>
+						<div class="sidebar">
+							<a href="#p4" class="next-page">Next</a>
+						</div>
+					</div>
+				</div> <!-- End item3 -->
+
+
+				<div class="item white-bg" id="page4">
+					<a href="#p4" class="focus-page">focus</a><label class="selected-closer" for="menuChk">&nbsp;</label>
+					<div id="image4" class="image left">
+						<div class="image-container"><img src="gridCSSArt/peacock.png" alt="Artwork"></div>
+					</div>
+
+					<div class="layout left">
+						<div class="content">
+							<h2>CSS Grid</h2>
+							<p>A creative Maker ethos permeates the culture of our organization. DIY and Open Source rest at the core
+								of our projects.
+								work.</p>
+						</div>
+						<div class="sidebar">
+							<a href="#p5" class="next-page">Next</a>
+						</div>
+					</div>
+				</div> <!-- End item4 -->
+
+
+				<div class="item white-bg" id="page5">
+					<a href="#p5" class="focus-page">focus</a><label class="selected-closer" for="menuChk">&nbsp;</label>
+					<div id="image5" class="image">
+						<div class="image-container"><img src="gridCSSArt/jelly.png" alt="Artwork"></div>
+					</div>
+
+					<div class="layout">
+						<div class="content">
+							<h2>Mobile</h2>
+							<p>Contact us to see how we can leverage our skills for your organizations</p>
+						</div>
+						<div class="sidebar">
+							<a href="#p6" class="next-page">Next</a>
+						</div>
+					</div>
+				</div> <!-- End item5 -->
+
+
+				<div class="item white-txt blue-bg-2" id="page6">
+					<a href="#p6" class="focus-page">focus</a><label class="selected-closer" for="menuChk">&nbsp;</label>
+					<div id="image6" class="image">
+						<div class="image-container"><img src="gridCSSArt/luna.png" alt="Artwork"></div>
+					</div>
+
+					<div class="layout">
+						<div class="content">
+							<h2>Legacy Browsers</h2>
+							<p>PRINT AND CODE</p>
+						</div>
+						<div class="sidebar">
+							<a href="#p7" class="next-page">Next</a>
+						</div>
+					</div>
+				</div> <!-- End item6 -->
+
+
+				<div class="item white-bg" id="page7">
+					<a href="#p7" class="focus-page">focus</a><label class="selected-closer" for="menuChk">&nbsp;</label>
+					<div id="image7" class="image splash">
+						<div class="image-container"><img src="gridCSSArt/crete.png" alt="Artwork"></div>
+					</div>
+
+					<div class="layout splash">
+						<div class="content">
+							<p>Design</p>
+						</div>
+						<div class="sidebar">
+							<a href="#p8" class="next-page">Next</a>
+						</div>
+					</div>
+				</div> <!-- End item7 -->
+
+
+				<div class="item white-txt red-bg" id="page8">
+					<a href="#p8" class="focus-page">focus</a><label class="selected-closer" for="menuChk">&nbsp;</label>
+					<div id="image8" class="image">
+						<div class="image-container"><img src="gridCSSArt/anenome.png" alt="Artwork"></div>
+					</div>
+
+					<div class="layout">
+						<div class="content">
+							<blockquote>
+								"to crush your enemies, to see them fall at your feet -- to take their horses and goods and hear the
+								lamentation of their women. That is best."
+								<div class="author">—Khan</div>
+							</blockquote>
+						</div>
+						<div class="sidebar">
+							<a href="#p9" class="next-page">Next</a>
+						</div>
+					</div>
+				</div> <!-- End item8 -->
+
+
+				<div class="item" id="page9">
+					<a href="#p9" class="focus-page">focus</a><label class="selected-closer" for="menuChk">&nbsp;</label>
+
+					<input type="radio" class="gallery-radio" tabindex="1" name="image" id="img1" checked>
+					<input type="radio" class="gallery-radio" tabindex="2" name="image" id="img2">
+					<input type="radio" class="gallery-radio" tabindex="3" name="image" id="img3">
+					<input type="radio" class="gallery-radio" tabindex="4" name="image" id="img4">
+					<input type="radio" class="gallery-radio" tabindex="5" name="image" id="img5">
+					<input type="radio" class="gallery-radio" tabindex="6" name="image" id="img6">
+					<input type="radio" class="gallery-radio" tabindex="7" name="image" id="img7">
+					<input type="radio" class="gallery-radio" tabindex="8" name="image" id="img8">
+
+					<div class="layout gallery">
+						<div class="content">
+							<div class="gallery-col2">
+								<div class="gallery-imageholder"></div>
+							</div>
+							<div class="gallery-col1">
+								<div class="gallery-nav">
+									<h2>Gallery</h2>
+									<label for="img1" class="gallery-thumb" id="img1thumb">Image1</label>
+									<label for="img2" class="gallery-thumb" id="img2thumb">Image2</label>
+									<label for="img3" class="gallery-thumb" id="img3thumb">Image3</label>
+									<label for="img4" class="gallery-thumb" id="img4thumb">Image4</label>
+									<label for="img5" class="gallery-thumb" id="img5thumb">Image5</label>
+									<label for="img6" class="gallery-thumb" id="img6thumb">Image6</label>
+									<label for="img7" class="gallery-thumb" id="img7thumb">Image7</label>
+									<label for="img8" class="gallery-thumb" id="img8thumb">Image8</label>
+								</div>
+							</div>
+
+						</div>
+						<div class="sidebar">
+							<a href="#p1" class="next-page">Next</a>
+						</div>
+					</div>
+				</div> <!-- End item9 -->
+
+				<div class="footer">&copy; 2017 James Clarke - <a href="http://www.hi.agency/">hi.agency</a></div>
+			</div>
+
+			<div class="navbar">
+				<label for="menuChk" class="menuBtn">&#9776;</label>
+			</div>
+		</div>
+	</body>
+
+	</html>
+
+
+
+</body>
+
+</html>
