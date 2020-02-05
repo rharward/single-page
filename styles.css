@@ -47,3 +47,11 @@
     border: 2px solid black;
     transition: opacity 2.5s;
 }
+
+#bm1 {
+    height: 450px;
+    width: 450px;
+   
+  }
+
+  body {background-color: black;}
