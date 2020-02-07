@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body, html{
+          
+            margin: 0px;
+            height: 100%;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+
+        #bodymovin{
+            width:49%;
+            height:100%;
+            display:block;
+            overflow: hidden;
+            transform: translate3d(0,0,0);
+            margin: auto;
+            float: left;
+            position: fixed;
+            left: 0;
+            top:0;
+            border-right: 1px solid #E5E5E5;
+        }
+        #contentid {
+            width:50%;
+            height: 100%;
+            float: right;
+        }
+        #contentid img {
+            width: 100%;
+            max-width: 502.5px;
+            left: 50%;
+            position: absolute;
+            margin: 0 4vw;
+        }
+    </style>
+   
+   <script src="/scripts/lottie.js" data-skip="true"></script> -->
+ <!-- <script src="/scripts/index.js" data-skip="true"></script> -->   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <div id="bodymovin"></div>
+
+
+    <div id="contentid">
+        <img src="scr1.png">
+    </div>
+
+<script>
+    var anim;
+    var elem = document.getElementById('bodymovin')
+    var animData = {
+        container: elem,
+        renderer: 'svg',
+        loop: false,
+        autoplay: false,
+        rendererSettings: {
+            progressiveLoad:false,
+            preserveAspectRatio: 'xMidYMid slice'
+        },
+        path: '/json12/data26.json'
+    };
+    anim = bodymovin.loadAnimation(animData);
+
+    $(window).scroll(function() {
+
+        // calculate the percentage the user has scrolled down the page
+        var scrollPercent = 100 * $(window).scrollTop() / ($(document).height() - $(window).height());
+
+      console.log("in here bro");
+
+        console.log(anim.currentRawFrame);
+     
+        scrollPercentRounded = Math.round(scrollPercent);
+       
+        /*console.log( (scrollPercentRounded / 100) * anim.totalFrames );*/
+
+        anim.goToAndStop( (scrollPercentRounded / 100) * 4000)
+    });
+
+
+
+
+
+</script>
+
+</body>
+</html>
