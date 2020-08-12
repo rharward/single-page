@@ -1,0 +1,22 @@
+#myimage2 {
+    background:transparent url('map11.gif');
+    width:10000px;
+    height:10000px;
+    clip-path: url(#mask);
+    cursor: move;
+    position:absolute;
+    
+    
+}
+
+#messageBox {
+    
+        max-width: 50%;
+        width: 100%;
+        position: fixed;
+        top: 80px;
+        right: 40px;
+        z-index: 2;
+    }
+
+}
