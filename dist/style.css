@@ -1,7 +1,7 @@
 #myimage2 {
-    background:transparent url('map11.gif');
-    width:10000px;
-    height:10000px;
+    background:transparent url('map11.svg');
+    width:5000px;
+    height:5000px;
     clip-path: url(#mask);
     cursor: move;
     position:absolute;
