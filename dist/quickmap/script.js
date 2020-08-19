@@ -10,8 +10,14 @@ let imageArray = ["data/shepherd.jpg",
                   "data/terrier.jpg",
                  "data/mutt.jpg"];
 let counter = 0;
+//document.getElementById('circle1').setAttribute("height", "10px");
+//this is leaflet information 
+var mymap = L.map('mapid').setView([51.505, -0.09], 13);
 
 $( document ).ready(function() {
+
+
+
 
 
     $( "#myimage2" ).click(function() {  
@@ -19,19 +25,17 @@ $( document ).ready(function() {
    let trap = document.getElementById('messageBox').innerHTML; 
 
 
-var randNumMin = -580;
-var randNumMax = 580;
+var randNumMin = -180;
+var randNumMax = 180;
 var xPos = (Math.floor(Math.random() * (randNumMax - randNumMin + 1)) + randNumMin);
 var yPos = (Math.floor(Math.random() * (randNumMax - randNumMin + 1)) + randNumMin);
 console.log(trap);
-     // trap = "HEY NOW MOTHERFUCKERS";
-    // let image = "<img id="+"myImg"+"src=imageArray alt="+"The Pulpit Rock"+"width="+"304"+"height="+"228"+"></img>"
+     
       document.getElementById('myImg').src = imageArray[counter];
       document.getElementById('message').innerHTML = messageArray[counter]
       
 
-	// $(this).animate({ 'backgroundPosition-y': '+='xPos  },
-                 //  "medium" );
+
             $(this).animate({'backgroundPosition-x': '+='+xPos},"fast");
             $(this).animate({'backgroundPosition-y': '+='+yPos},"fast");
             //let message = document.getElementById("messageBox").innerHTML;

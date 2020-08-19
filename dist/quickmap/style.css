@@ -1,0 +1,37 @@
+#myimage2 {
+    background:transparent url('map11.svg') ;
+    width:5000px;
+    height:5000px;
+    clip-path: url(#mask);
+    position:absolute;
+    top: 480px; 
+   
+}
+    
+    
+
+
+#messageBox {
+    
+        max-width: 50%;
+        width: 100%;
+        position: fixed;
+        top: 80px;
+        right: 40px;
+        z-index: 2;
+    }
+
+#lowerHalf {
+    
+        max-width: 50%;
+        width: 100%;
+        position: fixed;
+        top: 380px;
+        right: 40px;
+        z-index: 2;
+    }
+
+#mapid { height: 80px;
+         top: 480px; 
+        z-index: 20
+    }

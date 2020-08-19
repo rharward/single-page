@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - jQuery example</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+  integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+  crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+  integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+  crossorigin=""></script>
+  <script>  L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    maxZoom: 18,
+    id: 'mapbox/streets-v11',
+    tileSize: 512,
+    zoomOffset: -1,
+    accessToken: 'pk.eyJ1IjoicGF0aGdyYWIiLCJhIjoiY2pkYWJlYm9xM3VkZTJ5cWZ4ZndmcmtibiJ9.yLcEsvXkMAtI360MoYCkGA'
+  }).addTo(mymap);
+  </script>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="mapHeader">
+  <h1>Loose Dog Incident Report</h1>
+</div>
+<div id="messageBox"> </div>
+<div  draggable="true" id="myimage2" > </div>
+<svg width="10000" height="10000">
+  <defs>
+    <clipPath id="mask">
+      
+       <rect width="400" height="250" x/>
+    </clipPath>
+  </defs>
+</svg>
+<div id="mapid"></div>
+<div id="messageBox"> 
+  <img id="myImg" src="data/shepherd.jpg" alt="shepherd" width="304" height="228">
+  <p id="message">BAD DOGS</p>
+  
+</div>
+
+<div id="lowerHalf"> 
+  <button type="button" onclick="alert('Hello world!')">Add a Map</button>
+</div>
+
+
+
+
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
