@@ -12,7 +12,7 @@ let imageArray = ["data/shepherd.jpg",
 let counter = 0;
 //document.getElementById('circle1').setAttribute("height", "10px");
 //this is leaflet information 
-var mymap = L.map('mapid').setView([51.505, -0.09], 13);
+var mymap = L.map('mapid').setView([39.6035720419788, -0.09], 13);
 
 $( document ).ready(function() {
 
