@@ -25,14 +25,14 @@ $( document ).ready(function() {
    let trap = document.getElementById('messageBox').innerHTML; 
 
 
-var randNumMin = -180;
-var randNumMax = 180;
+var randNumMin = -380;
+var randNumMax = 380;
 var xPos = (Math.floor(Math.random() * (randNumMax - randNumMin + 1)) + randNumMin);
 var yPos = (Math.floor(Math.random() * (randNumMax - randNumMin + 1)) + randNumMin);
 console.log(trap);
      
       document.getElementById('myImg').src = imageArray[counter];
-      document.getElementById('message').innerHTML = messageArray[counter]
+      document.getElementById('message').innerHTML = "<h1>"+messageArray[counter]+"</h1"
       
 
 
